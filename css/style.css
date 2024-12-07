@@ -160,7 +160,6 @@ header a:last-child {
 	font-style : italic;
 }
 .leftContent p {
-	text-align : left;
 	padding-bottom : 8px;
 	border-bottom : 1px solid #ccc;
 	color : #9f6b53;
