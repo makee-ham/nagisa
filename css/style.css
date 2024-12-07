@@ -5,6 +5,30 @@ body { font-family: "Gowun Dodum", system-ui; color : #37352f; }
 	width : 100%;
 	margin : 0 auto;
 }
+/* 맨 위로 가기 버튼 스타일 */
+.scroll-top-btn {
+	position: fixed; /* 화면에 고정 */
+	bottom: 20px; /* 화면 하단에서 20px */
+	right: 20px; /* 화면 오른쪽에서 20px */
+	background-color: #007bff; /* 버튼 배경색 */
+	color: white; /* 버튼 텍스트 색상 */
+	border: none;
+	border-radius: 30px;
+	padding: 10px 10px;
+	cursor: pointer;
+	font-size: 14px;
+	opacity: 0; /* 초기에는 투명하게 설정 */
+	visibility: hidden; /* 보이지 않게 설정 */
+	transition: opacity 0.5s ease, visibility 0.5s ease; /* 부드러운 전환 효과 */
+	z-index: 1000; /* 다른 요소 위에 표시 */
+}
+.scroll-top-btn.show {
+	opacity: 1; /* 투명도 변경으로 나타남 */
+	visibility: visible; /* 화면에 보이게 설정 */
+}
+.scroll-top-btn:hover {
+	background-color: #0056b3; /* 버튼 마우스 오버 시 색상 변경 */
+}
 /* 헤더 */
 header {
 	width : 100%;
